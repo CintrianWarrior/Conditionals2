@@ -1,10 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        int clientOS = 1;
-        if (clientOS == 0) {
-            System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (clientOS == 1) {
-            System.out.println("Установите версию приложения для Android по ссылке");
-        }
+       int deliveryDistance = 95;
+       int deliveryDays = 0;
+       if (deliveryDistance <= 20) {
+           deliveryDays = 1;
+       } else if (deliveryDistance<=60) {
+           deliveryDays = 2;
+       } else if (deliveryDistance<=100) {
+           deliveryDays = 3;
+       }
+        System.out.println("Потребуется дней " + deliveryDays);
     }
 }
