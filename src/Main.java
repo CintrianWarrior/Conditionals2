@@ -1,10 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-       int year = 2000;
-       if (year%4==0 && year%100!=0 || year%400==0) {
-           System.out.println(year + " год является високосным");
-       } else {
-           System.out.println(year + " год не является високосным");
+       int deliveryDistance = 95;
+       int deliveryDays = 0;
+       if (deliveryDistance <= 20) {
+           deliveryDays = 1;
+       } else if (deliveryDistance<=60) {
+           deliveryDays = 2;
+       } else if (deliveryDistance<=100) {
+           deliveryDays = 3;
        }
+        System.out.println("Потребуется дней " + deliveryDays);
     }
 }
